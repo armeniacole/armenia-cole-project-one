@@ -526,6 +526,8 @@ input[type="text"] {
 /* Tablet/ Lets not break everything */
 
 @media (max-width: 768px) {
+
+    /*General Tablet*/
   .wrapper {
     max-width: 768px;
   }
@@ -535,10 +537,6 @@ input[type="text"] {
     text-align: center;
     display: block;
     margin: 0 auto;
-  }
-
-  * {
-    color: pink;
   }
 
   /* HEADER TABLET */
@@ -617,7 +615,7 @@ input[type="text"] {
   }
 
   .more-content a {
-      display: inline-block
+      display: inline-block;
   }
 
   .text-one p, .text-two p {
@@ -677,7 +675,7 @@ input[type="text"] {
 
 }
 
-/* Mobile */
+/* Main-Mobile */
 
 @media (max-width: 480px) {
   /* General MOBILE*/
@@ -726,6 +724,16 @@ input[type="text"] {
   .crafted-text h2 {
     font-size: 2.3rem;
   }
+
+   .more-content a {
+      display: block;
+  }
+
+  .text-one, .text-two {
+    padding: 20px;
+    
+  }
+
 
   /* gallery MOBILE*/
 
@@ -791,6 +799,44 @@ input[type="text"] {
     width: 85%;
     margin-left: 35px;
   }
-
   
+}
+
+/* small phones */
+@media (max-width: 320px) {
+
+    /* header */
+    
+    header {
+        height: 70vh;
+    }
+    h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    /* first section */
+
+
+    .content-1 img {
+        width: 280px;
+        height: 250px;
+    }
+
+    .crafted-text {
+        width: 280px;
+    }
+
+    /* links */
+
+    .links a {
+    width: 70%;
+    }
+
+    /* form */
+
+    input[type="text"] {
+    width: 280px;
+    height: 40px;
+  }
 }
