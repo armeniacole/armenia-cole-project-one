@@ -76,10 +76,10 @@ h2 {
 }
 
 
-/* Header */
+/* Header DESKTOP */
 
 header {
-    height: 85vh;
+    height: 90vh;
     background: #815600;
 }
 
@@ -106,7 +106,7 @@ nav li {
 
 h1 {
     font-size: 4.5rem;
-    width: 40%;
+    width: 50%;
     text-align: right;
     margin: 0;
     float: left;
@@ -140,7 +140,7 @@ i {
     padding: 5px;
 }
 
-/* first section */
+/* first section  DESKTOP*/
 
 .content-1 {
     background: #500801;
@@ -155,10 +155,13 @@ i {
     object-fit: cover;
     object-position: 20%;
 }
+
 .crafted-text {
     float: left; 
     width: 70%;
     margin-left: 25px;
+    position: relative;
+    bottom: 85px;
 }
 
 .crafted-text p {
@@ -169,7 +172,7 @@ i {
     margin-bottom: 0;
 }
 
-/* gallery */
+/* gallery DESKTOP*/
 
 .gallery {
     background: #815600;
@@ -199,7 +202,7 @@ i {
     margin: 0 60px;
 }
 
-/* links */
+/* links DESKTOP*/
 
 .links {
     background: #500801;
@@ -222,7 +225,7 @@ i {
 }
 
 
-/* article section */
+/* article section DESKTOP*/
 
 .more-content {
     background: #815600;
@@ -240,7 +243,7 @@ i {
     float: left;
     position: relative;
     left: 90px;
-    top: 60px;
+    top: 30px;
 }
 
 .text-one p {
@@ -257,10 +260,9 @@ i {
 }
 
 .text-two {
-    /* width: 50%; */
     float: left;
     position: relative;
-    top: 60px;
+    top: 25px;
     left: 75px;
 }
 
@@ -270,7 +272,7 @@ i {
 }
 
 
-/* footers */
+/* footers DESKTOP */
 
 h3 {
     font-size: 2.25rem;
@@ -311,7 +313,7 @@ h3 {
 
 .form {
     float: left;
-    margin-left: 255px;
+    margin-left: 160px;
     text-align: center;
 }
 
@@ -365,9 +367,18 @@ input[type="text"] {
         max-width: 768px;
     }
 
+    .read {
+        width: 160px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
     * {
         color: pink;
     }
+
+    /* HEADER TABLET */
 
       h1 {
         float: right;
@@ -394,30 +405,46 @@ input[type="text"] {
         position: relative;
         top: 25px;
         right: 50px;
-    }   
+    }  
+    
+    /* content section one TABLET */ 
+
+    .content-1 img {
+        float: none;
+        margin-top: 0;
+        width: 650px;
+        height: 400px;
+        object-fit: cover;
+        object-position: 20%;
+    }
+
+    .crafted-text {
+        float: none; 
+        margin-top: 150px;
+        width: 650px;
+        margin-left: 20px;
+    }
+
+    .crafted-text h2 {
+        margin-bottom: 0;
+        text-align: center;
+    } 
+
+ 
 }
-
-/* content section one */
-
 
 
 /* Mobile */
 
 @media (max-width: 480px) {
 
-    /* General */
+    /* General MOBILE*/
 
     .wrapper {
         width: 95%;
         max-width: 480px;
     }
     
-    .read {
-        width: 160px;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-    }
     /* Header */
 
     h1 {
@@ -433,41 +460,34 @@ input[type="text"] {
         font-size: 2.5rem;
         float: right;
     }
-
-
+    
     .splash {
-        width: 95%;
+        float: none;
+        width: 70%;
         position: relative;
-        top: 50px;
-    }    
+        top: 25px;
+        right: 50px;
+    }  
 
-/* content section one*/
+/* content section one MOBILE*/
 
 .content-1 img {
-    float: none;
-    margin-top: 0;
     margin-left: 15px;
-    width: 425px;
+    width: 410px;
     height: 300px;
-    object-fit: cover;
-    object-position: 20%;
 }
 
 .crafted-text {
-    float: none; 
-    width: 425px;
-    margin-left: 17px;
+    width: 410px;
 }
 
 .crafted-text h2 {
-    margin-bottom: 0;
-    text-align: center;
     font-size: 2.3rem;
 }
 
 
 
- /* gallery */
+ /* gallery MOBILE*/
 
  .middle {
      display: none;
@@ -485,7 +505,7 @@ input[type="text"] {
       padding: 50px 0px 20px;
  }
 
-/* Links */
+/* Links MOBILE*/
 
 .links a {
     float: none;
@@ -496,7 +516,7 @@ input[type="text"] {
     padding: 25px 0;
 }
 
-/* article section */
+/* article section MOBILE*/
 
     .more-content h2 {
         font-size: 2.3rem;
@@ -536,7 +556,7 @@ input[type="text"] {
         margin-left: 35px;
     }
     
-    /* Footers */
+    /* Footers MOBILE*/
 
 
     .bottom-nav, .form, .contact {
