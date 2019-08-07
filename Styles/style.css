@@ -51,8 +51,7 @@ p, li {
 }
 
 a:hover {
-    font-size: 1.5rem;
-
+    border-bottom: 2px solid white;
 }
 
 .wrapper {
@@ -352,17 +351,59 @@ input[type="text"] {
     text-align: right;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 /* Media Queries */
+
+/* Tablet/ Lets not break everything */
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        max-width: 768px;
+    }
+
+    * {
+        color: pink;
+    }
+
+      h1 {
+        float: right;
+        width: 80%;
+        margin: 0;
+        padding-top: 20px;
+        position: static;
+        font-size: 4rem;
+        line-height: 64.3px;
+    }
+
+    header img {
+        float: none;
+        clear: both;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .splash {
+        float: none;
+        width: 70%;
+        position: relative;
+        top: 25px;
+        right: 50px;
+    }   
+}
+
+/* content section one */
+
+
 
 /* Mobile */
 
 @media (max-width: 480px) {
-
-    /* testing */
-    h1, h2, h3, p, a {
-
-        /* color: darkgreen;  */
-    }
 
     /* General */
 
@@ -380,23 +421,10 @@ input[type="text"] {
     /* Header */
 
     h1 {
-        float: right;
-        width: 80%;
-        margin: 0;
-        padding-top: 20px;
-        position: static;
-        font-size: 3rem;
-        line-height: 64.3px;
+        font-size: 3rem;  
     }
 
-    header img {
-        float: none;
-        clear: both;
-
-    }
-
-
-    .social, nav ul {
+    nav ul {
         display: none;
     }
 
@@ -408,11 +436,9 @@ input[type="text"] {
 
 
     .splash {
-        float: none;
         width: 95%;
         position: relative;
         top: 50px;
-        right: 50px;
     }    
 
 /* content section one*/
